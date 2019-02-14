@@ -4,7 +4,8 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
- ## creates a matrix object that can cache the inverse
+ ## creates a matrix object that can cache its inverse, and then cacheSolve calculates the inverse. 
+  ##if the inverse has already been calculated, it will find it in the cache instead of recalculating 
   
    m <- NULL
   set <- function(y){
